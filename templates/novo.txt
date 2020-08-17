@@ -1,0 +1,3 @@
+Olá {{NOME}}!
+
+Seja bem-vindo(a) ao site {{SITE}}.
