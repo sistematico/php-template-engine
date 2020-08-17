@@ -8,7 +8,7 @@ class Template {
         $template = file_get_contents($file);
         
         foreach ($args as $key => $value) {
-            $template = str_replace("{{". $key . "}}", $value, $template);
+            $template = str_replace("{{". strtoupper($key) . "}}", $value, $template);
         }
 
         return $template;
