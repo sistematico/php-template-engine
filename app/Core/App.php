@@ -2,7 +2,7 @@
 
 namespace App\Core;
 
-class Application
+class App
 {
     private $url_controller = null;
     private $url_action = null;
