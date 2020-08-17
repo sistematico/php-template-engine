@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Model;
+
 class Template {
     public static function render($file, $args)
     {
