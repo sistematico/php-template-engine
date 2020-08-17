@@ -1,8 +1,5 @@
 <?php
-/**
- * https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md
-*/
-
+/* https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md */
 spl_autoload_register(function ($class) {
     $prefix = 'App\\';
     $base_dir = APP;
