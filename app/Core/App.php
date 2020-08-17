@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core;
+namespace Templates\Core;
 
 class App
 {
@@ -13,7 +13,7 @@ class App
         $this->splitUrl();
 
         if (!$this->url_controller) {
-            $page = new \App\Controller\TemplatesController();
+            $page = new \Templates\Controller\TemplatesController();
             $page->index();
         } else if (file_exists(APP . 'Controller/' . ucfirst($this->url_controller) . 'Controller.php')) {
             $controller = "\\App\\Controller\\" . ucfirst($this->url_controller) . 'Controller';
@@ -32,12 +32,12 @@ class App
                 if (strlen($this->url_action) == 0) {
                     $this->url_controller->index();
                 } else {
-                    $pagina = new \App\Controller\TemplatesController();
+                    $pagina = new \Templates\Controller\TemplatesController();
                     $pagina->erro();
                 }
             }
         } else {
-            $pagina = new \App\Controller\TemplatesController();
+            $pagina = new \Templates\Controller\TemplatesController();
             $pagina->erro();
         }
     }

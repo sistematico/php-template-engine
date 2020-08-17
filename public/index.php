@@ -7,4 +7,4 @@ define('TEMPLATES', ROOT . 'templates' . DIRECTORY_SEPARATOR);
 
 require CONFIG . 'autoload.php';
 
-$app = new App\Core\App();
+$app = new Templates\Core\App();
