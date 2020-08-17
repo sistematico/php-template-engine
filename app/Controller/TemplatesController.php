@@ -7,11 +7,11 @@ class TemplatesController
 {
     public function index()
     {
-        echo Template::render(TEMPLATES . 'index.html', ['nome'=>'Site']);
+        echo Template::render('index', ['nome'=>'Site']);
     }
 
     public function erro()
     {
-        echo Template::render(TEMPLATES . 'erro.html', ['nome'=>'Site']);
+        echo Template::render('erro', ['nome'=>'Site']);
     }
 }
