@@ -13,7 +13,7 @@ class Application
         $this->splitUrl();
 
         if (!$this->url_controller) {
-            $page = new \App\Controller\PaginasController();
+            $page = new \App\Controller\TemplatesController();
             $page->index();
         } else if (file_exists(APP . 'Controller/' . ucfirst($this->url_controller) . 'Controller.php')) {
             $controller = "\\App\\Controller\\" . ucfirst($this->url_controller) . 'Controller';
@@ -32,12 +32,12 @@ class Application
                 if (strlen($this->url_action) == 0) {
                     $this->url_controller->index();
                 } else {
-                    $pagina = new \App\Controller\PaginasController();
+                    $pagina = new \App\Controller\TemplatesController();
                     $pagina->erro();
                 }
             }
         } else {
-            $pagina = new \App\Controller\PaginasController();
+            $pagina = new \App\Controller\TemplatesController();
             $pagina->erro();
         }
     }
