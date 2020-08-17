@@ -1,4 +1,5 @@
 <?php
+
 class Template {
 
 	static $blocks = array();
