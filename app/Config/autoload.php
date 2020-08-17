@@ -1,7 +1,7 @@
 <?php
 /* https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md */
 spl_autoload_register(function ($class) {
-    $prefix = 'App\\';
+    $prefix = 'Templates\\';
     $base_dir = APP;
 
     $len = strlen($prefix);

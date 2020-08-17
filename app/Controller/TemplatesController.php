@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Controller;
-use App\Model\Template;
+namespace Templates\Controller;
+use Templates\Model\Template;
 
 class TemplatesController
 {
