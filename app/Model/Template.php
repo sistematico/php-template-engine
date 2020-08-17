@@ -5,7 +5,7 @@ namespace App\Model;
 class Template {
     public static function render($file, $args)
     {
-        $template = file_get_contents($file);
+        $template = file_get_contents(TEMPLATES . $file . '.html');
         
         foreach ($args as $key => $value) {
             $template = str_replace("{{". strtoupper($key) . "}}", $value, $template);
